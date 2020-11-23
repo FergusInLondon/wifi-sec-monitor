@@ -1,0 +1,169 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:+5V #PWR?
+U 1 1 600CC8B0
+P 3700 3050
+AR Path="/60385DC8/600CC8B0" Ref="#PWR?"  Part="1" 
+AR Path="/60386202/600CC8B0" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3700 2900 50  0001 C CNN
+F 1 "+5V" V 3715 3178 50  0000 L CNN
+F 2 "" H 3700 3050 50  0001 C CNN
+F 3 "" H 3700 3050 50  0001 C CNN
+	1    3700 3050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 600CD801
+P 3700 5100
+AR Path="/60385DC8/600CD801" Ref="#PWR?"  Part="1" 
+AR Path="/60386202/600CD801" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3700 4850 50  0001 C CNN
+F 1 "GND" V 3705 4972 50  0000 R CNN
+F 2 "" H 3700 5100 50  0001 C CNN
+F 3 "" H 3700 5100 50  0001 C CNN
+	1    3700 5100
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 600CDF77
+P 4200 4350
+AR Path="/60385DC8/600CDF77" Ref="C?"  Part="1" 
+AR Path="/60386202/600CDF77" Ref="C?"  Part="1" 
+F 0 "C?" H 4085 4304 50  0000 R CNN
+F 1 "0.1 uF" H 4085 4395 50  0000 R CNN
+F 2 "" H 4238 4200 50  0001 C CNN
+F 3 "~" H 4200 4350 50  0001 C CNN
+	1    4200 4350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5200 4400 5200 5100
+Wire Wire Line
+	5200 5100 4200 5100
+Wire Wire Line
+	4200 4500 4200 5100
+Connection ~ 4200 5100
+Wire Wire Line
+	4200 5100 3700 5100
+Wire Wire Line
+	3700 3050 4200 3050
+Wire Wire Line
+	4200 3050 4200 3400
+Connection ~ 4200 3400
+Wire Wire Line
+	4200 3400 4200 3550
+Wire Wire Line
+	4200 3400 4150 3400
+Wire Wire Line
+	5200 3500 5200 3400
+Wire Wire Line
+	4200 3400 5200 3400
+$Comp
+L Analog_ADC:ADS1015IDGS U?
+U 1 1 600B97A1
+P 5200 4000
+AR Path="/600B97A1" Ref="U?"  Part="1" 
+AR Path="/5FBAE479/600C9A8F/600B97A1" Ref="U1"  Part="1" 
+AR Path="/60385DC8/600B97A1" Ref="U?"  Part="1" 
+AR Path="/60386202/600B97A1" Ref="U?"  Part="1" 
+F 0 "U?" H 5100 4600 50  0000 C CNN
+F 1 "ADS1015IDGS" H 4900 4500 50  0000 C CNN
+F 2 "Package_SO:TSSOP-10_3x3mm_P0.5mm" H 5200 3500 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ads1015.pdf" H 5150 3100 50  0001 C CNN
+	1    5200 4000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 600D121B
+P 6150 4000
+AR Path="/60385DC8/600D121B" Ref="J?"  Part="1" 
+AR Path="/60386202/600D121B" Ref="J?"  Part="1" 
+F 0 "J?" H 6230 3992 50  0000 L CNN
+F 1 "Conn_01x04" H 6230 3901 50  0000 L CNN
+F 2 "" H 6150 4000 50  0001 C CNN
+F 3 "~" H 6150 4000 50  0001 C CNN
+	1    6150 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 3900 5600 3900
+Wire Wire Line
+	5600 4000 5950 4000
+Wire Wire Line
+	5950 4100 5600 4100
+Wire Wire Line
+	5600 4200 5950 4200
+Text HLabel 3700 4100 0    50   Input ~ 0
+I2C_SDA
+Text HLabel 3700 4000 0    50   Input ~ 0
+I2C_SCL
+Wire Wire Line
+	3700 4000 4350 4000
+Wire Wire Line
+	4800 4100 4600 4100
+$Comp
+L Device:R R?
+U 1 1 600D3C57
+P 4350 3750
+AR Path="/60385DC8/600D3C57" Ref="R?"  Part="1" 
+AR Path="/60386202/600D3C57" Ref="R?"  Part="1" 
+F 0 "R?" H 4400 3700 50  0000 L CNN
+F 1 "10 kO" H 4350 3600 50  0000 L CNN
+F 2 "" V 4280 3750 50  0001 C CNN
+F 3 "~" H 4350 3750 50  0001 C CNN
+	1    4350 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 600D58CE
+P 4600 3750
+AR Path="/60385DC8/600D58CE" Ref="R?"  Part="1" 
+AR Path="/60386202/600D58CE" Ref="R?"  Part="1" 
+F 0 "R?" H 4650 3700 50  0000 L CNN
+F 1 "10 kO" H 4600 3600 50  0000 L CNN
+F 2 "" V 4530 3750 50  0001 C CNN
+F 3 "~" H 4600 3750 50  0001 C CNN
+	1    4600 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 3900 4350 4000
+Connection ~ 4350 4000
+Wire Wire Line
+	4350 4000 4800 4000
+Wire Wire Line
+	4600 3900 4600 4100
+Connection ~ 4600 4100
+Wire Wire Line
+	4600 4100 3700 4100
+Wire Wire Line
+	4350 3600 4350 3550
+Wire Wire Line
+	4350 3550 4200 3550
+Connection ~ 4200 3550
+Wire Wire Line
+	4200 3550 4200 4200
+Wire Wire Line
+	4600 3600 4600 3550
+Wire Wire Line
+	4600 3550 4350 3550
+Connection ~ 4350 3550
+$EndSCHEMATC
