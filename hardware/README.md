@@ -21,9 +21,10 @@ This is very rough, and likely going to be subject to a lot of experimentation a
 
 ## Block Diagram
 
-    img
+![Basic Block Diagram](diagrams/block-diagram-overview.png)
 
 ## Schematics
+
 
 ### Main Control Board
 
@@ -35,7 +36,7 @@ The Arduino Uno interfaces with a 74HC595 Shift Register, providing 8 output cha
 
 Interfaces with: Thermistors (via I2C comms w/ ADC), Relay Load Current Sensors (via I2C comms w/ ADC), and Output Board.
 
-    img
+![Main Control Board](diagrams/main-control-board.png)
 
 Connections:
 
@@ -66,6 +67,7 @@ Components:
 
 *TBC*
 
+
 ### Relay Control Board
 
 **Schematic:** 12vdc-output-control.sch
@@ -74,7 +76,7 @@ The Relay Control Board drives 12VDC to 4 DC Barrel Jack connections, complete w
 
 The board consists of four Sanyou SRD relays, powering a DC Barrel Jack with an inline fuse. Current is monitored via an ACS712 IC.
 
-    img
+![Relay Driver Board](diagrams/relay-driver-board.png)
 
 Connections:
 
@@ -91,16 +93,14 @@ Integrated Circuits:
 
 Components:
 
-*tbc*
 
-
-### Temperature Monitoring Board
+### Temperature Monitoring Probes
 
 **Schematic:** temp-mon.sch
 
-The Temperature Monitoring Board is a simple array of voltage dividers utilising thermistors, allowing temperature to be calculated based upon the overall output voltage. The values from the thermistors are sent to an ADC Board.
+The Temperature Monitoring Probes are simply an array of voltage dividers utilising thermistors, allowing temperature to be calculated based upon the overall output voltage. The values from the thermistors are sent to an ADC Board.
 
-    img
+![Temperature Monitoring Probes](diagrams/temp-monitor-probes.png)
 
 Components:
 *TBC*
@@ -112,11 +112,10 @@ Components:
 
 The ADC Board is built around the ADS1015 Analog to Digital Converter; and provides an I2C interface for reading values, and a 4-pin header for providing 5V analog signals.
 
-    img
+![adc_4_channel.png](diagrams/adc_4_channel.png)
 
 Integrated Circuits:
 
 | Name | Description |
 |------|-------------|
 | ADS1015 | Analog-to-Digital Converter
-
