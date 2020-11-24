@@ -119,3 +119,14 @@ Integrated Circuits:
 | Name | Description |
 |------|-------------|
 | ADS1015 | Analog-to-Digital Converter
+
+
+### WiFi Interface Board
+
+This board breaks out the ESP01 and provides an interface for (a) serial communications, (b) programming, and (c) reset functionality.
+
+Integrated Circuits:
+
+| Name | Description |
+|------|-------------|
+| MAX4528 | Analog Switch |
