@@ -125,6 +125,8 @@ Integrated Circuits:
 
 This board breaks out the ESP01 and provides an interface for (a) serial communications, (b) programming, and (c) reset functionality.
 
+![wifi-control-board.png](diagrams/wifi-control-board.png)
+
 Integrated Circuits:
 
 | Name | Description |
