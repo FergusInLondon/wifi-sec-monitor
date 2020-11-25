@@ -1,11 +1,14 @@
 #!/bin/sh
 
-server () {
-    make server-quality
+FIRMWARE_SRC_PATTERN="firmware/"
+GATEWAY_SRC_PATTERN="gateway/"
+
+gateway () {
+    make test-gateway
 }
 
 firmware () {
-    make firmware-quality
+    make test-firmware
 }
 
-server && firmware
+gateway && firmware
