@@ -1,0 +1,17 @@
+# System Output:
+# t        = TYPE              [int, payload type, value = 0]
+# t[1...4] = TEMP VALUE        [int, temperature sensor reading]
+# u        = UPTIME            [unsigned long, UTC timestamp (seconds since 01/01/1970)]
+t=0 t1=43 t2=39 t3=53 t4=32 u=1606379675
+# Sensor Output:
+# t = TYPE              [int, payload type, value = 1]
+# o = OUTPUT IDENTIFIER [int, identifier of the output relay]
+# s = STATUS IDENTIFIER [int, index of the s]
+# c = CURRENT OUTPUT    [int, output load in mAh]
+# e = ERROR             [int, identifier of any error condition - such as faulty load (i.e. blown fuse)]
+t=1 o=1 s=1 c=321 e=0
+# Error Counts:
+# t  = TYPE          [int, payload type, value = 2]
+# ot = OVERTEMP      [int, count of 'overtemp' conditions - count since last power on]
+# lf = LOAD_FAILURES [int, count of 'load' failures - i.e. where an output current has been 0 for a sensor that's on]
+t=2 ot=1 lf=2

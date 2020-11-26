@@ -14,4 +14,5 @@ import (
 
 func TestSuite(t *testing.T) {
 	suite.Run(t, new(ClientTestSuite))
+	suite.Run(t, new(ParserTestSuite))
 }

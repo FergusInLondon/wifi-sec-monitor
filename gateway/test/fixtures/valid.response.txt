@@ -1,0 +1,17 @@
+# basic temperature output and uptime (turned on 26/11/2020)
+t=0 t1=43 t2=39 t3=53 t4=32 u=1606379675
+
+# relay 1 (o=1) switched on (s=0), active current is 321mAh (c=321), and functioning correctly without errors (e=0)
+t=1 o=1 s=1 c=321 e=0
+# relay 2 (o=2) switched on (s=1), but no current (c=0), which means ErrorFaultyLoadNoCurrent (e=1)
+t=1 o=2 s=1 c=0 e=1
+# relay 3 (o=3) switched off, no current, and no error
+t=1 o=3 s=0 c=0 e=0
+# relay 4 (o=4) switched off, BUT with 542mAh of current (c=542), which means ErrorFaultyLoadCurrentPresent (e=2)
+t=1 o=4 s=0 c=542 e=2
+
+# Error Counts (since turn-on):
+# t  = TYPE          [int, payload type, value = 2]
+# ot = OVERTEMP      [int, count of 'overtemp' conditions - count since last power on]
+# lf = LOAD_FAILURES [int, count of 'load' failures - i.e. where an output current has been 0 for a sensor that's on]
+t=2 ot=1 lf=2
