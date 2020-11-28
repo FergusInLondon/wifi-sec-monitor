@@ -260,7 +260,7 @@ Wire Wire Line
 Wire Wire Line
 	1700 4600 1700 5100
 Wire Wire Line
-	4750 4450 1800 4450
+	4750 4450 4000 4450
 Wire Wire Line
 	4750 4450 4750 4900
 Connection ~ 1800 4450
@@ -683,116 +683,8 @@ Connection ~ 7050 4500
 Wire Wire Line
 	5900 3750 5900 4500
 Connection ~ 8500 650 
-$Comp
-L Connector_Generic_MountingPin:Conn_01x02_MountingPin J?
-U 1 1 6005EABB
-P 9350 3400
-F 0 "J?" H 9650 3400 50  0000 L CNN
-F 1 "TEMP4" H 9650 3300 50  0000 L CNN
-F 2 "" H 9350 3400 50  0001 C CNN
-F 3 "~" H 9350 3400 50  0001 C CNN
-	1    9350 3400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic_MountingPin:Conn_01x02_MountingPin J?
-U 1 1 6006F490
-P 9350 2800
-F 0 "J?" H 9650 2800 50  0000 L CNN
-F 1 "TEMP3" H 9650 2700 50  0000 L CNN
-F 2 "" H 9350 2800 50  0001 C CNN
-F 3 "~" H 9350 2800 50  0001 C CNN
-	1    9350 2800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic_MountingPin:Conn_01x02_MountingPin J?
-U 1 1 60076928
-P 9350 2200
-F 0 "J?" H 9650 2200 50  0000 L CNN
-F 1 "TEMP2" H 9650 2100 50  0000 L CNN
-F 2 "" H 9350 2200 50  0001 C CNN
-F 3 "~" H 9350 2200 50  0001 C CNN
-	1    9350 2200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic_MountingPin:Conn_01x02_MountingPin J?
-U 1 1 6007692E
-P 9350 1600
-F 0 "J?" H 9650 1600 50  0000 L CNN
-F 1 "TEMP1" H 9650 1500 50  0000 L CNN
-F 2 "" H 9350 1600 50  0001 C CNN
-F 3 "~" H 9350 1600 50  0001 C CNN
-	1    9350 1600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8500 650  8950 650 
-Wire Wire Line
-	8250 750  8800 750 
-Wire Wire Line
-	8800 3500 8800 2900
-Connection ~ 8800 750 
-Wire Wire Line
-	8800 750  9150 750 
-Wire Wire Line
-	9150 3400 8950 3400
-Wire Wire Line
-	8950 3400 8950 2800
-Connection ~ 8950 650 
-Wire Wire Line
-	8950 650  9150 650 
-Wire Wire Line
-	9150 2800 8950 2800
-Connection ~ 8950 2800
-Wire Wire Line
-	8950 2800 8950 2200
-Wire Wire Line
-	9150 2200 8950 2200
-Connection ~ 8950 2200
-Wire Wire Line
-	8950 2200 8950 1600
-Wire Wire Line
-	9150 1600 8950 1600
-Connection ~ 8950 1600
-Wire Wire Line
-	8950 1600 8950 650 
-Wire Wire Line
-	9150 1700 8800 1700
-Connection ~ 8800 1700
-Wire Wire Line
-	8800 1700 8800 750 
-Wire Wire Line
-	9150 2300 8800 2300
-Connection ~ 8800 2300
-Wire Wire Line
-	8800 2300 8800 1700
-Wire Wire Line
-	9150 2900 8800 2900
-Connection ~ 8800 2900
-Wire Wire Line
-	8800 2900 8800 2300
-Text Label 9450 1600 0    50   ~ 0
-5V
-Text Label 9450 1700 0    50   ~ 0
-GND
-Text Label 9450 2200 0    50   ~ 0
-5V
-Text Label 9450 2300 0    50   ~ 0
-GND
-Text Label 9450 2800 0    50   ~ 0
-5V
-Text Label 9450 2900 0    50   ~ 0
-GND
-Text Label 9450 3400 0    50   ~ 0
-5V
-Text Label 9450 3500 0    50   ~ 0
-GND
 Wire Wire Line
 	5150 650  8500 650 
-Wire Wire Line
-	8250 750  8250 4500
 $Comp
 L Connector_Generic_MountingPin:Conn_01x02_MountingPin J?
 U 1 1 602FF1EA
@@ -825,7 +717,7 @@ L Connector_Generic:Conn_01x06 J?
 U 1 1 602600E6
 P 6450 4900
 F 0 "J?" H 6400 4500 50  0000 L CNN
-F 1 "WiFi Control Conn" H 6100 4400 50  0000 L CNN
+F 1 "WiFi Control Module" H 6100 4400 50  0000 L CNN
 F 2 "" H 6450 4900 50  0001 C CNN
 F 3 "~" H 6450 4900 50  0001 C CNN
 	1    6450 4900
@@ -843,231 +735,20 @@ Text Label 6550 4800 0    50   ~ 0
 RX
 Text Label 6550 5200 0    50   ~ 0
 GND
-$Comp
-L Connector_Generic_MountingPin:Conn_01x02_MountingPin J?
-U 1 1 5FC15CD3
-P 8900 6000
-F 0 "J?" V 9200 5900 50  0000 L CNN
-F 1 "TEMP4" V 9300 5850 50  0000 L CNN
-F 2 "" H 8900 6000 50  0001 C CNN
-F 3 "~" H 8900 6000 50  0001 C CNN
-	1    8900 6000
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector_Generic_MountingPin:Conn_01x02_MountingPin J?
-U 1 1 5FC15CD9
-P 9500 6000
-F 0 "J?" V 9800 5950 50  0000 L CNN
-F 1 "TEMP3" V 9900 5900 50  0000 L CNN
-F 2 "" H 9500 6000 50  0001 C CNN
-F 3 "~" H 9500 6000 50  0001 C CNN
-	1    9500 6000
-	0    1    1    0   
-$EndComp
-Text Label 9500 6100 3    50   ~ 0
-5V
-Text Label 9400 6100 3    50   ~ 0
-GND
-Text Label 8900 6100 3    50   ~ 0
-5V
-Text Label 8800 6100 3    50   ~ 0
-GND
-Wire Wire Line
-	8900 5800 8900 5350
-Wire Wire Line
-	9500 5350 9500 5800
-$Comp
-L Connector_Generic_MountingPin:Conn_01x02_MountingPin J?
-U 1 1 5FC15CE7
-P 10100 6000
-F 0 "J?" V 10400 5900 50  0000 L CNN
-F 1 "TEMP2" V 10500 5850 50  0000 L CNN
-F 2 "" H 10100 6000 50  0001 C CNN
-F 3 "~" H 10100 6000 50  0001 C CNN
-	1    10100 6000
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector_Generic_MountingPin:Conn_01x02_MountingPin J?
-U 1 1 5FC15CED
-P 10700 6000
-F 0 "J?" V 11000 5950 50  0000 L CNN
-F 1 "TEMP1" V 11100 5900 50  0000 L CNN
-F 2 "" H 10700 6000 50  0001 C CNN
-F 3 "~" H 10700 6000 50  0001 C CNN
-	1    10700 6000
-	0    1    1    0   
-$EndComp
-Text Label 10700 6100 3    50   ~ 0
-5V
-Text Label 10600 6100 3    50   ~ 0
-GND
-Text Label 10100 6100 3    50   ~ 0
-5V
-Text Label 10000 6100 3    50   ~ 0
-GND
-Wire Wire Line
-	10100 5800 10100 5350
-Wire Wire Line
-	10700 5350 10700 5800
-$Comp
-L Device:R R?
-U 1 1 5FC2588D
-P 10600 4950
-F 0 "R?" H 10650 5000 50  0000 L CNN
-F 1 "R" H 10650 4900 50  0000 L CNN
-F 2 "" V 10530 4950 50  0001 C CNN
-F 3 "~" H 10600 4950 50  0001 C CNN
-	1    10600 4950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10600 4700 10600 4800
-Wire Wire Line
-	10600 4700 10000 4700
-Wire Wire Line
-	10700 5350 10100 5350
-Connection ~ 9500 5350
-Wire Wire Line
-	9500 5350 8950 5350
-Connection ~ 10100 5350
-Wire Wire Line
-	10100 5350 9500 5350
 Wire Wire Line
 	2900 5500 8500 5500
-Text Label 9850 4250 1    50   ~ 0
+Text Label 10600 4600 3    50   ~ 0
 SENSOR1
-Text Label 9750 4250 1    50   ~ 0
+Text Label 10500 4600 3    50   ~ 0
 SENSOR2
-Text Label 9650 4250 1    50   ~ 0
+Text Label 10400 4600 3    50   ~ 0
 SENSOR3
-Text Label 9550 4250 1    50   ~ 0
+Text Label 10300 4600 3    50   ~ 0
 SENSOR4
-$Comp
-L Connector_Generic:Conn_01x04 J?
-U 1 1 5FC4E118
-P 9750 4300
-F 0 "J?" V 9800 4500 50  0000 L CNN
-F 1 "Current Sensor ADC 1" V 9700 4500 50  0000 L CNN
-F 2 "" H 9750 4300 50  0001 C CNN
-F 3 "~" H 9750 4300 50  0001 C CNN
-	1    9750 4300
-	0    1    -1   0   
-$EndComp
-Wire Wire Line
-	10600 5100 10600 5150
-$Comp
-L Device:R R?
-U 1 1 5FC7E044
-P 10000 4950
-F 0 "R?" H 10050 5000 50  0000 L CNN
-F 1 "R" H 10050 4900 50  0000 L CNN
-F 2 "" V 9930 4950 50  0001 C CNN
-F 3 "~" H 10000 4950 50  0001 C CNN
-	1    10000 4950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5FC855D5
-P 9400 4950
-F 0 "R?" H 9250 5000 50  0000 L CNN
-F 1 "R" H 9300 4900 50  0000 L CNN
-F 2 "" V 9330 4950 50  0001 C CNN
-F 3 "~" H 9400 4950 50  0001 C CNN
-	1    9400 4950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5FC8CAD3
-P 8800 4950
-F 0 "R?" H 8650 5000 50  0000 L CNN
-F 1 "R" H 8700 4900 50  0000 L CNN
-F 2 "" V 8730 4950 50  0001 C CNN
-F 3 "~" H 8800 4950 50  0001 C CNN
-	1    8800 4950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8800 5100 8800 5150
-Wire Wire Line
-	9400 5100 9400 5150
-Wire Wire Line
-	10000 5100 10000 5150
-Wire Wire Line
-	10000 4800 10000 4700
-Connection ~ 10000 4700
-Wire Wire Line
-	10000 4700 9400 4700
-Wire Wire Line
-	9400 4800 9400 4700
-Connection ~ 9400 4700
-Wire Wire Line
-	9400 4700 8800 4700
-Wire Wire Line
-	8800 4800 8800 4700
-Wire Wire Line
-	9850 4500 9850 4550
-Wire Wire Line
-	9850 4550 10800 4550
-Wire Wire Line
-	10800 4550 10800 5150
-Wire Wire Line
-	10800 5150 10600 5150
-Connection ~ 10600 5150
-Wire Wire Line
-	10600 5150 10600 5800
-Wire Wire Line
-	10000 5150 9750 5150
-Connection ~ 10000 5150
-Wire Wire Line
-	10000 5150 10000 5800
-Wire Wire Line
-	9650 5150 9400 5150
-Connection ~ 9400 5150
-Wire Wire Line
-	9400 5150 9400 5800
-Wire Wire Line
-	9550 4500 9550 4550
-Wire Wire Line
-	9550 4550 8600 4550
-Wire Wire Line
-	8600 5150 8800 5150
-Wire Wire Line
-	8600 4550 8600 5150
-Connection ~ 8800 5150
-Wire Wire Line
-	8800 5150 8800 5800
-Wire Wire Line
-	9650 4500 9650 5150
-Wire Wire Line
-	9750 4500 9750 5150
-Wire Wire Line
-	8500 650  8500 5500
-Wire Wire Line
-	8800 3500 9150 3500
-Wire Wire Line
-	8800 3500 8800 4700
-Connection ~ 8800 3500
-Connection ~ 8800 4700
 Wire Wire Line
 	7050 4500 8250 4500
 Wire Wire Line
-	8950 3400 8950 5350
-Connection ~ 8950 3400
-Connection ~ 8950 5350
-Wire Wire Line
-	8950 5350 8900 5350
-Wire Wire Line
 	7050 4500 7050 6150
-Text Label 8800 4500 1    50   ~ 0
-5V
-Text Label 8950 4500 1    50   ~ 0
-GND
-Text Label 10550 4700 2    50   ~ 0
-GND
 $Comp
 L Device:Thermistor TH?
 U 1 1 5FC03E30
@@ -1108,4 +789,216 @@ Wire Notes Line
 	4700 7450 4700 6750
 Text Notes 4750 6850 0    50   ~ 0
 Thermal Probe (TEMP{1…4})
+Wire Wire Line
+	4000 5850 4000 4450
+Connection ~ 4000 4450
+Wire Wire Line
+	4000 4450 1800 4450
+Wire Wire Line
+	8500 650  9150 650 
+Text Label 9100 2100 0    50   ~ 0
+GND
+Wire Wire Line
+	9300 4000 9200 4000
+Wire Wire Line
+	9200 3400 9200 4000
+Connection ~ 9200 3400
+Wire Wire Line
+	9300 3400 9200 3400
+Wire Wire Line
+	9200 2800 9200 3400
+Connection ~ 9200 2800
+Wire Wire Line
+	9300 2800 9200 2800
+$Comp
+L Device:R R?
+U 1 1 5FC8CAD3
+P 9450 4000
+F 0 "R?" V 9350 3950 50  0000 L CNN
+F 1 "R" V 9250 4000 50  0000 L CNN
+F 2 "" V 9380 4000 50  0001 C CNN
+F 3 "~" H 9450 4000 50  0001 C CNN
+	1    9450 4000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FC855D5
+P 9450 3400
+F 0 "R?" V 9350 3350 50  0000 L CNN
+F 1 "R" V 9250 3400 50  0000 L CNN
+F 2 "" V 9380 3400 50  0001 C CNN
+F 3 "~" H 9450 3400 50  0001 C CNN
+	1    9450 3400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FC7E044
+P 9450 2800
+F 0 "R?" V 9350 2750 50  0000 L CNN
+F 1 "R" V 9250 2800 50  0000 L CNN
+F 2 "" V 9380 2800 50  0001 C CNN
+F 3 "~" H 9450 2800 50  0001 C CNN
+	1    9450 2800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9200 2200 9200 2800
+Wire Wire Line
+	9200 2200 9300 2200
+$Comp
+L Device:R R?
+U 1 1 5FC2588D
+P 9450 2200
+F 0 "R?" V 9350 2150 50  0000 L CNN
+F 1 "R" V 9250 2200 50  0000 L CNN
+F 2 "" V 9380 2200 50  0001 C CNN
+F 3 "~" H 9450 2200 50  0001 C CNN
+	1    9450 2200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8500 650  8500 2200
+Connection ~ 9200 2200
+Wire Wire Line
+	8500 2200 9200 2200
+Connection ~ 8500 2200
+Wire Wire Line
+	8500 2200 8500 5500
+Text Label 8550 2200 0    50   ~ 0
+5V
+Connection ~ 9050 3300
+Wire Wire Line
+	9050 3300 9050 3900
+Wire Wire Line
+	8250 750  8250 4500
+Wire Wire Line
+	9050 2100 9050 2700
+Connection ~ 9050 2100
+Wire Wire Line
+	9050 2100 9050 750 
+Connection ~ 9050 750 
+Wire Wire Line
+	9050 750  9150 750 
+Wire Wire Line
+	8250 750  9050 750 
+Connection ~ 9050 2700
+Wire Wire Line
+	9050 2700 9050 3300
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 5FC4E118
+P 10500 4500
+F 0 "J?" V 11050 4450 50  0000 L CNN
+F 1 "Temperature Sensor ADC 1" V 11150 4000 50  0000 L CNN
+F 2 "" H 10500 4500 50  0001 C CNN
+F 3 "~" H 10500 4500 50  0001 C CNN
+	1    10500 4500
+	0    1    1    0   
+$EndComp
+Text Label 9950 2100 0    50   ~ 0
+GND
+Text Label 9950 2200 0    50   ~ 0
+Vin
+$Comp
+L Connector_Generic_MountingPin:Conn_01x02_MountingPin J?
+U 1 1 5FC15CED
+P 9850 2100
+F 0 "J?" V 10150 2050 50  0000 L CNN
+F 1 "TEMP1" V 10250 2000 50  0000 L CNN
+F 2 "" H 9850 2100 50  0001 C CNN
+F 3 "~" H 9850 2100 50  0001 C CNN
+	1    9850 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic_MountingPin:Conn_01x02_MountingPin J?
+U 1 1 5FC15CE7
+P 9850 2700
+F 0 "J?" V 10150 2600 50  0000 L CNN
+F 1 "TEMP2" V 10250 2550 50  0000 L CNN
+F 2 "" H 9850 2700 50  0001 C CNN
+F 3 "~" H 9850 2700 50  0001 C CNN
+	1    9850 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic_MountingPin:Conn_01x02_MountingPin J?
+U 1 1 5FC15CD9
+P 9850 3300
+F 0 "J?" V 10150 3250 50  0000 L CNN
+F 1 "TEMP3" V 10250 3200 50  0000 L CNN
+F 2 "" H 9850 3300 50  0001 C CNN
+F 3 "~" H 9850 3300 50  0001 C CNN
+	1    9850 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic_MountingPin:Conn_01x02_MountingPin J?
+U 1 1 5FC15CD3
+P 9850 3900
+F 0 "J?" V 10150 3800 50  0000 L CNN
+F 1 "TEMP4" V 10250 3750 50  0000 L CNN
+F 2 "" H 9850 3900 50  0001 C CNN
+F 3 "~" H 9850 3900 50  0001 C CNN
+	1    9850 3900
+	1    0    0    -1  
+$EndComp
+Text Label 9950 2700 0    50   ~ 0
+GND
+Text Label 9950 2800 0    50   ~ 0
+Vin
+Text Label 9950 3300 0    50   ~ 0
+GND
+Text Label 9950 3400 0    50   ~ 0
+Vin
+Text Label 9950 3900 0    50   ~ 0
+GND
+Text Label 9950 4000 0    50   ~ 0
+Vin
+Wire Wire Line
+	9050 3900 9650 3900
+Wire Wire Line
+	9650 3300 9050 3300
+Wire Wire Line
+	9650 2100 9050 2100
+Wire Wire Line
+	9650 2700 9050 2700
+Wire Wire Line
+	9600 2200 9650 2200
+Wire Wire Line
+	9600 2800 9650 2800
+Wire Wire Line
+	9600 3400 9650 3400
+Wire Wire Line
+	9600 4000 9650 4000
+Wire Wire Line
+	9650 2450 9650 2200
+Connection ~ 9650 2200
+Wire Wire Line
+	9650 3050 9650 2800
+Connection ~ 9650 2800
+Wire Wire Line
+	9650 4250 9650 4000
+Connection ~ 9650 4000
+Wire Wire Line
+	9650 3400 9650 3650
+Connection ~ 9650 3400
+Wire Wire Line
+	9650 4250 10300 4250
+Wire Wire Line
+	10300 4250 10300 4300
+Wire Wire Line
+	9650 3650 10400 3650
+Wire Wire Line
+	10400 3650 10400 4300
+Wire Wire Line
+	9650 3050 10500 3050
+Wire Wire Line
+	10500 3050 10500 4300
+Wire Wire Line
+	9650 2450 10600 2450
+Wire Wire Line
+	10600 2450 10600 4300
 $EndSCHEMATC
