@@ -28,7 +28,7 @@ This is very rough, and likely going to be subject to a lot of experimentation a
 
 ### Main Control Board
 
-**Schematic:** Main Control Board.sch
+[**Directory**](schematics/Main%20Control%20Board/diagram.png)
 
 The Main Control Board contains the circuitry needed to drive the relay board, provides some basic status LEDs, and opens a WiFi interface via the ESP01.
 
@@ -36,7 +36,8 @@ The Arduino Uno interfaces with a 74HC595 Shift Register, providing 8 output cha
 
 Interfaces with: Thermistors (via I2C comms w/ ADC), Relay Load Current Sensors (via I2C comms w/ ADC), and Output Board.
 
-[**Directory:**](schematics/Main%20Control%20Board/diagram.png)
+![Schematic for the Main Control Board](schematics/Main%20Control%20Board/diagram.png)
+
 
 Connections:
 
@@ -70,13 +71,13 @@ Components:
 
 ### Relay Control Module
 
-[**Directory:**](schematics/Relay%20Control%20Module)
+[**Directory**](schematics/Relay%20Control%20Module)
 
 The Relay Control Board drives 12VDC to 4 DC Barrel Jack connections, complete with current monitoring and over-current protection.
 
 The board consists of four Sanyou SRD relays, powering a DC Barrel Jack with an inline fuse. Current is monitored via an ACS712 IC.
 
-![Relay Driver Board](schematics/Relay%20Control%20Module/diagram.png)
+![Schematic for the Relay Control Module](schematics/Relay%20Control%20Module/diagram.png)
 
 Connections:
 
@@ -96,11 +97,11 @@ Components:
 
 ### Analog-to-Digital I2C Module
 
-[**Directory:**](schematics/Analog-to-Digital%20i2c%20Module)
+[**Directory**](schematics/Analog-to-Digital%20i2c%20Module)
 
 The ADC Board is built around the ADS1015 Analog to Digital Converter; and provides an I2C interface for reading values, and a 4-pin header for providing 5V analog signals.
 
-![adc_4_channel.png](schematics/Analog-to-Digital%20i2c%20Module/diagram.png)
+![Schematic for the ADC Module](schematics/Analog-to-Digital%20i2c%20Module/diagram.png)
 
 Integrated Circuits:
 
@@ -111,11 +112,11 @@ Integrated Circuits:
 
 ### WiFi Control Module
 
-[**Directory:**](schematics/WiFi%20Control%20Module)
+[**Directory**](schematics/WiFi%20Control%20Module)
 
 This board breaks out the ESP01 and provides an interface for (a) serial communications, (b) programming, and (c) reset functionality.
 
-![wifi-control-board.png](schematics/WiFi%20Control%20Module/diagram.png)
+![Schematic for the WiFi Control Module](schematics/WiFi%20Control%20Module/diagram.png)
 
 Integrated Circuits:
 
