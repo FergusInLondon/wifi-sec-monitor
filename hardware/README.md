@@ -21,7 +21,7 @@ This is very rough, and likely going to be subject to a lot of experimentation a
 
 ## Block Diagram
 
-![Basic Block Diagram](diagrams/block-diagram.png)
+![Basic Block Diagram](schematics/block-diagram.png)
 
 ## Schematics
 
