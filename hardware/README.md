@@ -36,7 +36,7 @@ The Arduino Uno interfaces with a 74HC595 Shift Register, providing 8 output cha
 
 Interfaces with: Thermistors (via I2C comms w/ ADC), Relay Load Current Sensors (via I2C comms w/ ADC), and Output Board.
 
-![Main Control Board](diagrams/main-control-board.png)
+[**Directory:**](schematics/Main%20Control%20Board/diagram.png)
 
 Connections:
 
@@ -68,15 +68,15 @@ Components:
 *TBC*
 
 
-### Relay Control Board
+### Relay Control Module
 
-**Schematic:** 12vdc-output-control.sch
+[**Directory:**](schematics/Relay%20Control%20Module)
 
 The Relay Control Board drives 12VDC to 4 DC Barrel Jack connections, complete with current monitoring and over-current protection.
 
 The board consists of four Sanyou SRD relays, powering a DC Barrel Jack with an inline fuse. Current is monitored via an ACS712 IC.
 
-![Relay Driver Board](diagrams/relay-driver-board.png)
+![Relay Driver Board](schematics/Relay%20Control%20Module/diagram.png)
 
 Connections:
 
@@ -94,25 +94,13 @@ Integrated Circuits:
 Components:
 
 
-### Temperature Monitoring Probes
+### Analog-to-Digital I2C Module
 
-**Schematic:** temp-mon.sch
-
-The Temperature Monitoring Probes are simply an array of voltage dividers utilising thermistors, allowing temperature to be calculated based upon the overall output voltage. The values from the thermistors are sent to an ADC Board.
-
-![Temperature Monitoring Probes](diagrams/temp-monitor-probes.png)
-
-Components:
-*TBC*
-
-
-### 4 Channel ADC Board
-
-**Schematic:** adc_4_channel.sch
+[**Directory:**](schematics/Analog-to-Digital%20i2c%20Module)
 
 The ADC Board is built around the ADS1015 Analog to Digital Converter; and provides an I2C interface for reading values, and a 4-pin header for providing 5V analog signals.
 
-![adc_4_channel.png](diagrams/adc_4_channel.png)
+![adc_4_channel.png](schematics/Analog-to-Digital%20i2c%20Module/diagram.png)
 
 Integrated Circuits:
 
@@ -121,11 +109,13 @@ Integrated Circuits:
 | ADS1015 | Analog-to-Digital Converter
 
 
-### WiFi Interface Board
+### WiFi Control Module
+
+[**Directory:**](schematics/WiFi%20Control%20Module)
 
 This board breaks out the ESP01 and provides an interface for (a) serial communications, (b) programming, and (c) reset functionality.
 
-![wifi-control-board.png](diagrams/wifi-control-board.png)
+![wifi-control-board.png](schematics/WiFi%20Control%20Module/diagram.png)
 
 Integrated Circuits:
 
