@@ -13,241 +13,327 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Wire Wire Line
-	6300 2050 6200 2050
 $Comp
-L Transistor_BJT:BC327 Q?
-U 1 1 5FD5EC01
-P 4450 4250
-F 0 "Q?" V 4778 4250 50  0000 C CNN
-F 1 "BC327" V 4687 4250 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4650 4175 50  0001 L CIN
-F 3 "http://www.onsemi.com/pub_link/Collateral/BC327-D.PDF" H 4450 4250 50  0001 L CNN
-	1    4450 4250
-	1    0    0    1   
+L Device:LED D1
+U 1 1 5FD8F48E
+P 8150 3800
+F 0 "D1" H 8150 3700 50  0000 C CNN
+F 1 "LED" H 8150 3600 50  0000 C CNN
+F 2 "" H 8150 3800 50  0001 C CNN
+F 3 "~" H 8150 3800 50  0001 C CNN
+	1    8150 3800
+	0    -1   1    0   
 $EndComp
 $Comp
-L Device:R R?
-U 1 1 5FD8F487
-P 7150 3300
-F 0 "R?" V 7350 3300 50  0000 C CNN
-F 1 "R" V 7250 3300 50  0000 C CNN
-F 2 "" V 7080 3300 50  0001 C CNN
-F 3 "~" H 7150 3300 50  0001 C CNN
-	1    7150 3300
+L Connector_Generic:Conn_01x06 J1
+U 1 1 5FC4A3F2
+P 2550 3300
+F 0 "J1" H 3000 3300 50  0000 C CNN
+F 1 "6-Pin MCB Conn" H 3250 3200 50  0000 C CNN
+F 2 "" H 2550 3300 50  0001 C CNN
+F 3 "~" H 2550 3300 50  0001 C CNN
+	1    2550 3300
+	-1   0    0    1   
+$EndComp
+$Comp
+L ESP8266:ESP-01v090 U1
+U 1 1 5FCB901F
+P 7050 4550
+F 0 "U1" H 7050 4150 50  0000 C CNN
+F 1 "ESP-01v090" H 7050 4050 50  0000 C CNN
+F 2 "" H 7050 4550 50  0001 C CNN
+F 3 "http://l0l.org.uk/2014/12/esp8266-modules-hardware-guide-gotta-catch-em-all/" H 7050 4550 50  0001 C CNN
+	1    7050 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 2550 6750 2800
+Wire Wire Line
+	6900 2550 6750 2550
+Wire Wire Line
+	6750 3400 6750 3500
+Wire Wire Line
+	7200 3100 7200 3500
+Connection ~ 7200 3100
+Wire Wire Line
+	7050 3100 7200 3100
+Wire Wire Line
+	7200 2550 7200 3100
+Connection ~ 7200 2550
+$Comp
+L Device:C C2
+U 1 1 5FC492A8
+P 7050 3500
+F 0 "C2" V 6798 3500 50  0000 C CNN
+F 1 "C" V 6889 3500 50  0000 C CNN
+F 2 "" H 7088 3350 50  0001 C CNN
+F 3 "~" H 7050 3500 50  0001 C CNN
+	1    7050 3500
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:LED D?
-U 1 1 5FD8F48E
-P 7650 3300
-F 0 "D?" H 7650 3200 50  0000 C CNN
-F 1 "LED" H 7650 3100 50  0000 C CNN
-F 2 "" H 7650 3300 50  0001 C CNN
-F 3 "~" H 7650 3300 50  0001 C CNN
-	1    7650 3300
-	-1   0    0    -1  
+L Device:C C1
+U 1 1 5FC470BE
+P 7050 2550
+F 0 "C1" H 7165 2596 50  0000 L CNN
+F 1 "C" H 7165 2505 50  0000 L CNN
+F 2 "" H 7088 2400 50  0001 C CNN
+F 3 "~" H 7050 2550 50  0001 C CNN
+	1    7050 2550
+	0    1    1    0   
 $EndComp
-Wire Wire Line
-	6650 3300 7000 3300
 $Comp
-L Connector_Generic:Conn_01x06 J?
-U 1 1 602F020F
-P 2900 5200
-F 0 "J?" H 2818 5617 50  0000 C CNN
-F 1 "Conn_01x06" H 2818 5526 50  0000 C CNN
-F 2 "" H 2900 5200 50  0001 C CNN
-F 3 "~" H 2900 5200 50  0001 C CNN
-	1    2900 5200
-	-1   0    0    -1  
+L Regulator_Linear:LP2950-3.3_TO252 U2
+U 1 1 5FC4060D
+P 6750 3100
+F 0 "U2" V 6750 3249 50  0000 C CNN
+F 1 "L4931-3.3" V 6850 3400 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 6750 3325 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lp2950-n.pdf" H 6750 3050 50  0001 C CNN
+	1    6750 3100
+	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	7300 3300 7500 3300
+	7200 3600 8000 3600
 Wire Wire Line
-	7800 3300 8000 3300
-Connection ~ 8000 3300
+	8000 3600 8000 4000
 Wire Wire Line
-	8000 3300 8000 5100
-Text Label 3150 5000 0    50   ~ 0
-3.3V
-Text Label 3150 5100 0    50   ~ 0
+	5800 3600 5800 3900
+Wire Wire Line
+	6100 4500 5800 4500
+Connection ~ 5800 4500
+Wire Wire Line
+	5800 4500 5800 4600
+$Comp
+L Device:C C3
+U 1 1 5FCF0C6E
+P 7050 4000
+F 0 "C3" V 6798 4000 50  0000 C CNN
+F 1 "C" V 6889 4000 50  0000 C CNN
+F 2 "" H 7088 3850 50  0001 C CNN
+F 3 "~" H 7050 4000 50  0001 C CNN
+	1    7050 4000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6900 4000 5800 4000
+Connection ~ 5800 4000
+Wire Wire Line
+	5800 4000 5800 4500
+Wire Wire Line
+	7200 4000 8000 4000
+Connection ~ 8000 4000
+Wire Wire Line
+	8000 4000 8000 4400
+Wire Wire Line
+	8150 3600 8000 3600
+Connection ~ 8000 3600
+$Comp
+L Device:R R1
+U 1 1 5FCFDB87
+P 8150 4250
+F 0 "R1" H 8220 4296 50  0000 L CNN
+F 1 "R" H 8220 4205 50  0000 L CNN
+F 2 "" V 8080 4250 50  0001 C CNN
+F 3 "~" H 8150 4250 50  0001 C CNN
+	1    8150 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 4500 8150 4500
+Wire Wire Line
+	8150 4500 8150 4400
+Wire Wire Line
+	5100 3000 5100 2300
+Wire Wire Line
+	2750 3000 5100 3000
+Wire Wire Line
+	5800 3600 6750 3600
+Wire Wire Line
+	6750 2550 6750 2450
+Wire Wire Line
+	2750 3100 4550 3100
+Connection ~ 6750 2550
+Text Label 2450 3000 2    50   ~ 0
 GND
-Text Label 3150 5200 0    50   ~ 0
-RX
-Text Label 3150 5300 0    50   ~ 0
+Text Label 2450 3100 2    50   ~ 0
+5V
+Text Label 2450 3500 2    50   ~ 0
 TX
+Text Label 2450 3400 2    50   ~ 0
+RX
+Text Label 2450 3300 2    50   ~ 0
+RST
+Text Label 2450 3200 2    50   ~ 0
+PRGM
+Connection ~ 7200 3500
+Wire Wire Line
+	7200 3500 7200 3600
+Wire Wire Line
+	6900 3500 6750 3500
+Connection ~ 6750 3500
+Wire Wire Line
+	6750 3500 6750 3600
 $Comp
-L ESP8266:ESP-01v090 U?
-U 1 1 5FBFF223
-P 5700 3350
-F 0 "U?" H 5700 2950 50  0000 C CNN
-F 1 "ESP-01v090" H 5700 2850 50  0000 C CNN
-F 2 "" H 5700 3350 50  0001 C CNN
-F 3 "http://l0l.org.uk/2014/12/esp8266-modules-hardware-guide-gotta-catch-em-all/" H 5700 3350 50  0001 C CNN
-	1    5700 3350
+L Transistor_FET:2N7000 Q1
+U 1 1 5FD45D72
+P 5100 4300
+F 0 "Q1" V 5349 4300 50  0000 C CNN
+F 1 "2N7000" V 5440 4300 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5300 4225 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 5100 4300 50  0001 L CNN
+	1    5100 4300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4900 4400 4750 4400
+$Comp
+L Device:R R2
+U 1 1 5FD45D79
+P 4750 4250
+F 0 "R2" H 4820 4296 50  0000 L CNN
+F 1 "R" H 4820 4205 50  0000 L CNN
+F 2 "" V 4680 4250 50  0001 C CNN
+F 3 "~" H 4750 4250 50  0001 C CNN
+	1    4750 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5FD45D81
+P 5450 4250
+F 0 "R3" H 5520 4296 50  0000 L CNN
+F 1 "R" H 5520 4205 50  0000 L CNN
+F 2 "" V 5380 4250 50  0001 C CNN
+F 3 "~" H 5450 4250 50  0001 C CNN
+	1    5450 4250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6650 3200 8000 3200
-Connection ~ 8000 3200
+	5450 4100 5100 4100
 Wire Wire Line
-	8000 3200 8000 3300
-Wire Wire Line
-	4750 3500 4450 3500
-Wire Wire Line
-	4050 3500 4050 5000
-Wire Wire Line
-	4750 3300 4450 3300
-Wire Wire Line
-	4450 3300 4450 3500
-Connection ~ 4450 3500
-Wire Wire Line
-	4450 3500 4350 3500
-Wire Wire Line
-	4550 4050 4550 3400
-Wire Wire Line
-	4550 3400 4750 3400
-Wire Wire Line
-	4250 4250 4250 5400
-Wire Wire Line
-	3100 5100 4550 5100
-Wire Wire Line
-	3100 5400 4250 5400
-Wire Wire Line
-	4550 4450 4550 5100
-Connection ~ 4550 5100
-Wire Wire Line
-	6200 2350 6450 2350
+	5300 4400 5450 4400
 $Comp
-L Device:D D?
-U 1 1 6035C3CE
-P 6750 2800
-F 0 "D?" H 6750 3017 50  0000 C CNN
-F 1 "D" H 6750 2926 50  0000 C CNN
-F 2 "" H 6750 2800 50  0001 C CNN
-F 3 "~" H 6750 2800 50  0001 C CNN
-	1    6750 2800
-	0    1    -1   0   
+L Transistor_FET:2N7000 Q2
+U 1 1 5FD4D2F0
+P 5100 5200
+F 0 "Q2" V 4750 5200 50  0000 C CNN
+F 1 "2N7000" V 4850 5200 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5300 5125 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 5100 5200 50  0001 L CNN
+	1    5100 5200
+	0    1    1    0   
 $EndComp
 Wire Wire Line
-	6200 2450 6450 2450
-Wire Wire Line
-	6200 2150 6300 2150
-Wire Wire Line
-	6300 2050 6300 2150
+	4900 5300 4750 5300
 $Comp
-L Regulator_Controller:UC3843_DIP8 U?
-U 1 1 5FC24A31
-P 5700 2250
-F 0 "U?" H 5700 1700 50  0000 C CNN
-F 1 "Analog Switch - TBC" H 5700 1800 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm" H 5700 1750 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/uc3842.pdf" H 5700 2250 50  0001 C CNN
-	1    5700 2250
-	-1   0    0    1   
+L Device:R R4
+U 1 1 5FD4D2F7
+P 4750 5150
+F 0 "R4" H 4820 5196 50  0000 L CNN
+F 1 "R" H 4820 5105 50  0000 L CNN
+F 2 "" V 4680 5150 50  0001 C CNN
+F 3 "~" H 4750 5150 50  0001 C CNN
+	1    4750 5150
+	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5700 2650 5700 2750
-Wire Wire Line
-	5700 2750 4350 2750
-Wire Wire Line
-	4350 2750 4350 3500
-Connection ~ 4350 3500
-Wire Wire Line
-	4350 3500 4050 3500
-Wire Wire Line
-	6450 2350 6450 2450
-Wire Wire Line
-	6450 2450 6450 2850
-Connection ~ 6450 2450
-Wire Wire Line
-	5700 1850 8000 1850
-Wire Wire Line
-	8000 1850 8000 3200
-Wire Wire Line
-	3900 2450 3900 5300
-Wire Wire Line
-	3750 5200 3750 2050
-Wire Wire Line
-	4450 3200 4450 2850
-Wire Wire Line
-	4450 2850 6450 2850
-Wire Wire Line
-	4450 3200 4750 3200
-Connection ~ 6300 2150
-Wire Wire Line
-	6300 4250 6600 4250
 $Comp
-L Transistor_BJT:BC327 Q?
-U 1 1 5FD2B18C
-P 6800 4250
-F 0 "Q?" V 7128 4250 50  0000 C CNN
-F 1 "BC327" V 7037 4250 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 7000 4175 50  0001 L CIN
-F 3 "http://www.onsemi.com/pub_link/Collateral/BC327-D.PDF" H 6800 4250 50  0001 L CNN
-	1    6800 4250
-	1    0    0    1   
-$EndComp
-Wire Wire Line
-	6900 3400 6900 4050
-Wire Wire Line
-	6650 3400 6900 3400
-Connection ~ 6900 5100
-Wire Wire Line
-	6900 5100 8000 5100
-Wire Wire Line
-	4550 5100 6900 5100
-Wire Wire Line
-	3100 5500 6300 5500
-Wire Wire Line
-	6750 2650 6750 2150
-Wire Wire Line
-	6300 2150 6750 2150
-Wire Wire Line
-	6750 2950 6750 3500
-Wire Wire Line
-	6650 3500 6750 3500
-Text Label 3150 5400 0    50   ~ 0
-SW_RST
-Text Label 3150 5500 0    50   ~ 0
-SW_PRGM
-Wire Wire Line
-	3100 5000 4050 5000
-Wire Wire Line
-	3750 2050 5200 2050
-Wire Wire Line
-	5200 2450 3900 2450
-Wire Wire Line
-	3100 5200 3750 5200
-Wire Wire Line
-	3100 5300 3900 5300
-$Comp
-L Switch:SW_SPST SW?
-U 1 1 5FBFC47A
-P 6600 4700
-F 0 "SW?" H 6600 4550 50  0000 C CNN
-F 1 "SW_SPST" H 6600 4450 50  0000 C CNN
-F 2 "" H 6600 4700 50  0001 C CNN
-F 3 "~" H 6600 4700 50  0001 C CNN
-	1    6600 4700
+L Device:R R5
+U 1 1 5FD4D2FD
+P 5450 5150
+F 0 "R5" H 5520 5196 50  0000 L CNN
+F 1 "R" H 5520 5105 50  0000 L CNN
+F 2 "" V 5380 5150 50  0001 C CNN
+F 3 "~" H 5450 5150 50  0001 C CNN
+	1    5450 5150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6300 4250 6300 4700
+	5450 5000 5100 5000
 Wire Wire Line
-	6900 4450 6900 4700
+	5300 5300 5450 5300
 Wire Wire Line
-	6800 4700 6900 4700
-Connection ~ 6900 4700
+	2750 3300 3600 3300
 Wire Wire Line
-	6900 4700 6900 5100
+	2750 3400 4100 3400
 Wire Wire Line
-	6400 4700 6300 4700
-Connection ~ 6300 4700
+	2750 3500 3950 3500
 Wire Wire Line
-	6300 4700 6300 5500
-Text Label 6250 4850 1    50   ~ 0
-SW_PRGM
-Text Label 4250 4250 3    50   ~ 0
-SW_RST
+	5450 4400 6100 4400
+Connection ~ 5450 4400
+Wire Wire Line
+	4750 4400 4100 4400
+Wire Wire Line
+	4100 3400 4100 4400
+Connection ~ 4750 4400
+Wire Wire Line
+	4550 3100 4550 4100
+Wire Wire Line
+	4550 5000 4750 5000
+Connection ~ 4550 3100
+Wire Wire Line
+	4550 3100 5250 3100
+Wire Wire Line
+	4750 4100 4550 4100
+Connection ~ 4550 4100
+Wire Wire Line
+	4550 4100 4550 5000
+Wire Wire Line
+	5800 3900 5450 3900
+Wire Wire Line
+	5450 3900 5450 4100
+Connection ~ 5800 3900
+Wire Wire Line
+	5800 3900 5800 4000
+Connection ~ 5450 4100
+Wire Wire Line
+	5450 5000 5450 4600
+Wire Wire Line
+	5450 4600 5800 4600
+Connection ~ 5450 5000
+Wire Wire Line
+	6100 4700 5800 4700
+Wire Wire Line
+	5800 4700 5800 4600
+Connection ~ 5800 4600
+Wire Wire Line
+	4750 5300 3950 5300
+Wire Wire Line
+	3950 3500 3950 5300
+Connection ~ 4750 5300
+Wire Wire Line
+	5450 5300 8000 5300
+Wire Wire Line
+	8000 5300 8000 4700
+Connection ~ 5450 5300
+Wire Wire Line
+	3800 3200 3800 5500
+Wire Wire Line
+	3800 5500 8150 5500
+Wire Wire Line
+	8150 5500 8150 4600
+Wire Wire Line
+	8150 4600 8000 4600
+Wire Wire Line
+	2750 3200 3800 3200
+Wire Wire Line
+	6100 4600 6000 4600
+Wire Wire Line
+	6000 4600 6000 5700
+Wire Wire Line
+	6000 5700 3600 5700
+Wire Wire Line
+	3600 3300 3600 5700
+Wire Wire Line
+	8150 3600 8150 3650
+Wire Wire Line
+	8150 3950 8150 4100
+Wire Wire Line
+	6750 2450 5250 2450
+Wire Wire Line
+	5250 2450 5250 3100
+Wire Wire Line
+	7200 2300 5100 2300
+Wire Wire Line
+	7200 2300 7200 2550
 $EndSCHEMATC
