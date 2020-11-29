@@ -1,10 +1,11 @@
-**/.DS_Store
+.DS_Store
 
 # reference files; these are zipped up on commit
-./hardware/datasheets
+hardware/datasheets/*.pdf
 
 # test infrastructure / mocks
 gateway/test/mock_*.go
 
 # binaries / artifacts
 gatewayd
+
