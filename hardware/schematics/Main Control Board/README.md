@@ -20,6 +20,7 @@ The Main Control Board contains the circuitry needed to drive the relay and WiFi
 *TBC - Still changing*
 
 | Junction | Pin | Description |
+|----------|-----|-------------|
 | J1-4 | - | Relay Control IN |
 | J5 | - | Current Sensor OUT |
 | J6 | - | 5V |

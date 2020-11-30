@@ -16,6 +16,7 @@ The Relay Control Module provides a 4 pin interface for controlling the output o
 ### Pinout
 
 | Junction | Pin | Description |
+|----------|-----|-------------|
 | J1 | 1 | Relay Control IN |
 | J1 | 2 | Current Sensor OUT |
 | J1 | 3 | 5V |

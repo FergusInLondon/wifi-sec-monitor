@@ -15,6 +15,7 @@ The WiFi Control Module provides a 6 pin interface with an ESP8266, including th
 ### Pinout
 
 | Junction | Pin | Description |
+|----------|-----|-------------|
 | J1 | 1 | RX (UART) |
 | J1 | 2 | TX (UART) |
 | J1 | 3 | PRGM - pull low/short to GND to enable programming mode on the ESP8266 |

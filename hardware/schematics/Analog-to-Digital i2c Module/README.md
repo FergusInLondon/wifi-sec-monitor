@@ -15,6 +15,7 @@ The Analog-to-Digital Module simply provides a wrapper around the ADS1015 ADC IC
 ### Pinout
 
 | Junction | Pin | Description |
+|----------|-----|-------------|
 | J1 | 1 | Analog In 1 |
 | J1 | 2 | Analog In 2 |
 | J1 | 3 | Analog In 3 |
